@@ -1,0 +1,58 @@
+<dbQuery>
+<dbSFWExp>
+<dbRelExp dbRelExpType="dbProjection">
+<EvalStrategy/>
+<dbRelExp dbRelExpType="dbSelection">
+<EvalStrategy/>
+<dbRelExp dbRelExpType="dbNaturaljoin">
+<EvalStrategy/>
+<dbRelExp dbRelExpType="dbProjection">
+<EvalStrategy/>
+<dbRelExp dbRelExpType="dbSelection">
+<EvalStrategy/>
+<dbRelExp dbRelExpType="dbRelation" dbRelName="Emp" startPage="5055"/>
+<BooleanExp>
+<booleanFactor booleanFactorType="attrOpConst">
+<dbAttr dbAttrName="Salary" dbAttrType="integer" dbRelAliasName="e" dbRelName="Emp"/>
+<comparisonOp opType=">"/>
+<dbConstValue constType="integer" constValue="70000"/>
+</booleanFactor>
+</BooleanExp>
+</dbRelExp>
+<dbAttrList numOfAttrs="2">
+<dbAttr dbAttrName="EName" dbAttrType="string" dbRelAliasName="e" dbRelName="Emp"/>
+<dbAttr dbAttrName="DName" dbAttrType="string" dbRelAliasName="e" dbRelName="Emp"/>
+</dbAttrList>
+</dbRelExp>
+<dbRelExp dbRelExpType="dbProjection">
+<EvalStrategy/>
+<dbRelExp dbRelExpType="dbSelection">
+<EvalStrategy/>
+<dbRelExp dbRelExpType="dbRelation" dbRelName="Dept" startPage="6003"/>
+<BooleanExp>
+<booleanFactor booleanFactorType="attrOpConst">
+<dbAttr dbAttrName="MName" dbAttrType="string" dbRelAliasName="d" dbRelName="Dept"/>
+<comparisonOp opType="="/>
+<dbConstValue constType="string" constValue="Name000038"/>
+</booleanFactor>
+</BooleanExp>
+</dbRelExp>
+<dbAttrList numOfAttrs="2">
+<dbAttr dbAttrName="MName" dbAttrType="string" dbRelAliasName="d" dbRelName="Dept"/>
+<dbAttr dbAttrName="DName" dbAttrType="string" dbRelAliasName="d" dbRelName="Dept"/>
+</dbAttrList>
+</dbRelExp>
+<dbAttrList numOfAttrs="2">
+<dbAttr dbAttrName="DName" dbAttrType="string" dbRelAliasName="e" dbRelName="Emp"/>
+<dbAttr dbAttrName="DName" dbAttrType="string" dbRelAliasName="d" dbRelName="Dept"/>
+</dbAttrList>
+</dbRelExp>
+<BooleanExp/>
+</dbRelExp>
+<dbAttrList numOfAttrs="2">
+<dbAttr dbAttrName="Name" dbAttrType="string" dbRelAliasName="e" dbRelName="Emp"/>
+<dbAttr dbAttrName="MName" dbAttrType="string" dbRelAliasName="d" dbRelName="Dept"/>
+</dbAttrList>
+</dbRelExp>
+</dbSFWExp>
+</dbQuery>

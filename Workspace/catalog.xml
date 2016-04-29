@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Relational_Db dbName="Personnel" numOfRelations="2">
+ <dbRel relName="Emp" numOfAttributes="4" StartPage="0" DIW_File ="src/cyclients/psIterator/Workspace/Employee100.csv">
+	 <dbAttr attrName="EmpId" attrType="integer" attrLength="4" />
+	 <dbAttr attrName="EName" attrType="string" attrLength="10" />
+	 <dbAttr attrName="DName" attrType="string" attrLength="10" />
+	 <dbAttr attrName="Salary" attrType="integer" attrLength="4" />
+ </dbRel>
+ <dbRel relName="Dept" numOfAttributes="2" StartPage="3" DIW_File = "src/cyclients/psIterator/Workspace/Department10.csv">
+	 <dbAttr attrName="DName" attrType="string" attrLength="10" />
+	 <dbAttr attrName="MName" attrType="string" attrLength="10" />
+ </dbRel>
+</Relational_Db>
