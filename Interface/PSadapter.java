@@ -1,4 +1,4 @@
-package cyclients.psIterator.adapter;
+package cyclients.psIterator.Interface;
 
 
 import cyclients.psIterator.EmployeeTuple;
@@ -64,8 +64,17 @@ public class PSadapter extends ClientsFactory
 			path = function.substring(0, function.indexOf(":"));
 			function = function.substring(function.indexOf(">") + 1); 
 		}
-		
-		if (function.equalsIgnoreCase("CreatePSIteratorofDisplay10")) {
+		if(function.equalsIgnoreCase("PSListAllCommands"))
+		{
+			if (commands.length == 1) {
+				dbgui.addOutput("CreatePSIteratorofDisplay10");	
+			}else{
+				
+				dbgui.addConsoleMessage("Exception Caught: Missing Arguments");
+			}	
+			
+		}
+		else if (function.equalsIgnoreCase("CreatePSIteratorofDisplay10")) {
 			
 			if (commands.length == 5) {
 				String catalogFile = commands[1].trim();

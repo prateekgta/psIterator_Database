@@ -1,1 +1,3 @@
 $PSIter:> CreatePSIteratorofDisplay10 cyclients/psIterator/Workspace/Catalog.xml cyclients/psIterator/Workspace/expTree.xml Emp cyclients/psIterator/output.txt;
+
+$PSIter:> PSListAllCommands;
