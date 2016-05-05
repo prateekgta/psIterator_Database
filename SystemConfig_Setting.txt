@@ -1,0 +1,5 @@
+<Client Name="PS" Prefix="PS" Enabled="yes"
+      ClassPath="" 
+      LibraryPath="" 
+      WorkspacePath="cyclients\psIterator\Workspace\"
+      ClientAdapter="cyclients.psIterator.Interface.PSadapter"/>
